@@ -6,45 +6,48 @@
 </head>
 <body>
 	<!--
-	//VARIABLES
-
-		//variables numèriques
-
 		<script type="text/javascript">
+			/* VARIABLES
+			variables numèriques */
 			var minumero=2;
 			var minumero=minumero +2;
 			alert (minumero);
 		</script>
 	
-		//variables de text
-			<script type="text/javascript">
+		
+		<script type="text/javascript">
+			//variables de text
 			var mitexto="Hola mundo";
 			alert (mitexto);
 		</script>
 
-		//matrius
+		
 		<script type="text/javascript">
+			//matrius
 			var mimatriz= ["Rojo", "verde", "azul"];
 			alert (mimatriz [0]);
 		</script>
 	
-		//elements continguts a a les matrius
-			<script type="text/javascript">
+		
+		<script type="text/javascript">
+			//elements continguts a a les matrius
 			var mimatriz2 = ["rojo", , 32, null, "HTML5 es genial"];
 			alert (mimatriz2[1]);
 		</script>
 	
-		//concatenació de variables de text i numèriques
+		
 			<script type="text/javascript">
+			//concatenació de variables de text i numèriques
 			var mimatriz3 = ["rojo" , 32];
 			mimatriz3 [0]="color " + mimatriz3[0];
 			mimatriz3 [1]=mimatriz3[1]+10;
 			alert (mimatriz3[0] + " " + mimatriz3[1]);
 		</script>
 
-		//interacció amb elements de la matriu
+
 	
-			<script type="text/javascript">
+		<script type="text/javascript">
+			//interacció amb elements de la matriu
 			var mimatriz4=["Rojo", 32];
 			mimatriz4.push('coche');
 			alert(mimatriz4[2]);
@@ -54,20 +57,21 @@
 			alert (mimatriz4.shift());
 		</script>
 
-	//CONDICIONALS I BUCLES.
 
-		//ús de condicionals
-			<script type="text/javascript">
+
+		<script type="text/javascript">
+			/* CONDICIONALS I BUCLES.
+			ús de condicionals */
 			var mivalor = 9;
 			if (mivalor<10) {
 				alert ("el valor es menor a 10, son exactamente " + mivalor);
 			}else{
 				alert ("el valor es igual o superior a 10");
 			}
-	</script>
+		</script>
 	
-		// ús de la declaració switch
 		<script type="text/javascript">
+		// ús de la declaració switch
 		var mivalor = 9;
 		switch (mivalor) {
 			case 5:
@@ -85,9 +89,10 @@
 			default:
 				alert ("el valor es igual o mayor a 9");
 		}
-	</script>
-		// comandament "for" incremental
+		</script>
+
 		<script type="text/javascript">
+			// comandament "for" incremental
 			var mivariable=9;
 			for (var i = 0; i < mivariable; i++) {
 			alert ("El valor actual es" + i);
@@ -95,29 +100,30 @@
 		</script>
 
 
-		// comandament for decremental
 		<script type="text/javascript">
+			// comandament for decremental
 			var mivalor = 1;
 			for (var i = 10; i > mivalor; i--) {
 			alert ("este valor es de " + i);
 			}
 		</script>
-
-		//ús de while
+-->
 		<script type="text/javascript">
+			//ús de while
 			var mivariable=10;
 			while(mivariable<100) {
 			mivariable++;
 			}
 			alert("El valor final de mi variable es " + mivariable);
 		</script>
--->
-		//ús de do While
+	<!--
 		<script type="text/javascript">
+			//ús de "do While"
 			mivariable=9;
 			do{mivariable ++;
 			}while (mivariable > 100);
 			alert("el valor final de la variable es " + mivariable);
 		</script>
+-->
 </body>
 </html>
