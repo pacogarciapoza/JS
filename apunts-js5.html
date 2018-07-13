@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS apunts Selectors</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<!--
+<section>
+	<script type="text/javascript">
+		function ferclic () {
+			var selec = document.querySelector("p.principal");
+			selec.addEventListener('click', alerta);
+		}
+		function alerta() {
+			alert ("Has triat bé");
+		}
+		addEventListener ('load', ferclic);
+	</script>
+	<p class="principal">Aquí pots clicar</p>
+	<p class="principal">Aquí NO pots clicar</p>
+	<p class="principal">Aquí NO pots clicar</p>
+	<p class="principal">Aquí NO pots clicar</p>
+	<hr>
+</section>
+-->
+<!--<section>
+	<script type="text/javascript">
+		function hacerclic () {
+			var lista = document.querySelectorAll (".principal");
+			lista[0].addEventListener ('click', mostraralerta);
+			}
+			function mostraralerta () {
+				alert ("Tots els texts es poden clicar");
+			}
+			addEventListener ('load', hacerclic);
+	</script>
+	<p class="principal">Aquí pots clicar</p>
+	<p class="principal">Aquí pots clicar</p>
+	<p class="principal">Aquí pots clicar</p>
+	<p class="principal">Aquí pots clicar</p>
+</section>
+-->
+<section>
+<script type="text/javascript">
+	function hacerclic () {
+		var lista = document.querySelectorAll (".principal");
+		for (var f = 0; f < lista.length; f++) {
+			lista[f].addEventListener('click', mostraralerta);
+		}
+	}
+	function mostraralerta() {
+		alert ("Has fet click");
+	}
+	addEventListener('load',hacerclic);
+</script>
+	<p class="principal">Aquí pots clicar</p>
+	<p class="principal">Aquí pots clicar</p>
+	<p class="principal">Aquí pots clicar</p>
+	<p class="principal">Aquí pots clicar</p>
+</section>
+</body>
+</html>

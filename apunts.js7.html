@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<title>Apunts JS Interacció</title>
+</head>
+<body>
+	<!--<script type="text/javascript">
+	function nuevoestilo() {
+		document.body.style.background = "#990000";
+		document.getElementById('myp').style.fontSize = "xx-large";
+		document.getElementById('myp').style.fontVariant="small-caps"
+	}
+	//addEventListener ('load',nuevoestilo);
+
+	</script>
+	<button onclick="nuevoestilo()">aplicar canvis</button>
+	<p id="myp">Aquest text</p>
+-->
+<!--<script type="text/javascript">
+	function myFunction() {
+    var x = 
+    document.getElementsByClassName("example");
+    var i;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.backgroundColor = "red";
+    }
+}
+
+</script>
+<p class="example">això es una paragraf</p>
+<p class="example">això es una paragraf</p>
+<p class="example">això es una paragraf</p>
+<p class="example">això es una paragraf</p>
+
+
+<button onclick="myFunction()">fes clic</button>
+-->
+<script type="text/javascript">
+	function mifuncion() {
+		var x = document.getElementsByClassName('box2');
+		for (var i = 0; i < x.length; i++) {
+			x[i].style.visibility ="hidden";
+		}
+	}
+	addEventListener ('click',mifuncion);
+	</script>
+	<div class="box2"></div>
+	<div class="box2"></div>
+	<div class="box2"></div>
+	<div class="box2"></div>
+	<div class="box2"></div>
+	<div class="box2"></div>
+
+</script>
+<button onclick="mifuncion()">oculta</button>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Apunts JS Interacció amb el document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!--
+	<div id="box"></div>
+	<div id="box"></div>
+	<script type="text/javascript">
+		function nuevoestilo() {
+			document.getElementById("principal");
+			document.body.style.background= "#334455";
+		}
+		function caja() {
+			document.getElementById("box").style.visibility = "hidden";
+			document.getElementById("boton").style.visibility = "hidden";
+
+		}
+		function caja2() {
+			document.getElementById("box").style.visibility = "visible";
+			document.getElementById("boton").style.visibility = "visible";
+		}
+	</script>-->
+	<!--<div class="box2"></div>
+	<div class="box2"></div>
+	<script type="text/javascript">
+		
+		function caja() {
+			var x= document.getElementsByClassName("box2");
+			x[0].style.visibility = "hidden";
+			x[1].style.visibility = "hidden";
+		}
+		
+	</script>-->
+	<!--<div class="box2"></div>
+	<div class="box2"></div>
+	<script type="text/javascript">
+		
+		function oculta() {
+			var x= document.getElementsByClassName("box2");
+			var i;
+			for (i =0; i < x.length; i++) {
+			x[i].style.visibility = "hidden";
+		}
+	}
+
+		
+	</script>
+		<button onclick="oculta()">oculta </button>
+-->
+<!--
+<div id="box"></div>
+
+
+<script type="text/javascript">
+	function oculta() {
+    var x = document.getElementById("box");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+
+}
+addEventListener('click', oculta)
+</script>
+-->
+
+</body>
+</html>

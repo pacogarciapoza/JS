@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> JS apunts .Document i incorporació de JS</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/mi.js"></script>
+	<!--Codi JS en linia-->
+		<p>Aquest text NO es clicable </p>
+		<p onclick="alert ('Has fet clic')">Aquest text SÍ es clicable</p>
+	<hr>
+	<!--Codi JS "Embebido"-->
+	<script type="text/javascript">
+		function clicable() {
+			var element = document.getElementsByTagName('p') [3];
+			element.addEventListener ('click', avis);
+		}
+		function avis() {
+			alert ("Has pogut clicar");
+		}
+		addEventListener ('load', clicable);
+	</script>
+	<p>Aquest text NO es clicable</p>
+	<p>Aquest text SÍ es clicable</p>
+	<hr>
+	<p>Aquest text SÍ es clicable</p>
+	<p>Aquest text NO es clicable</p>
+	</section>
+</body>
+</html>

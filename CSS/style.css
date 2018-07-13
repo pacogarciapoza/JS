@@ -4,3 +4,26 @@ p {
 #color{
 	color: blue;
 }
+.principal{
+	color:green;
+}
+#principal{
+	color:orange;
+}
+#box{
+	width: 30px;
+	height: 100px;
+	background-color: orange;
+}
+.box2{
+	width: 30px;
+	height: 30px;
+	background-color: black;
+}
+.miclase{
+	background: #DDDD00;
+}
+.example{
+	border: 1px solid black;
+    margin: 5px;
+}

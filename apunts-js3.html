@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS apunts objectes</title>
+</head>
+<!--Objectes
+<body>
+	<script type="text/javascript">
+		var dades = {
+			nom: "Paco",
+			edat: 42
+		};
+		alert ("El meu nom es " + dades.nom);
+		alert ("Tinc " + dades['edat'] + " anys");
+	</script>
+-->
+<!--Varibles i objectes
+	<script type="text/javascript">
+		var mivariable = "nom";
+		var dades = {
+			nom: "Paco",
+			edat: 42,
+			};
+		alert (dades[mivariable]);
+</script>	
+-->
+<!--Afegir i editar elements a objectes
+<script type="text/javascript">
+	var dades = {
+		nom:"Francesc",
+		edat: 42,
+	};
+	dades.nom = "Paco";
+	dades.vehicle = "furgoneta";
+	alert ("Bones, el meu nom es "+ dades.nom + " tinc " + dades.edat + "anys i tinc una " + dades.vehicle);
+</script>
+-->
+<!--Mètodes, Objectes que inclouen funcions
+<script type="text/javascript">
+	var dades = {
+	nom: "Francesc",
+	edat: 42,
+	mostrarnom: function (){
+		alert (dades.nom);
+	},
+	canvinom: function (nounom){
+		dades.nom = nounom;
+	}
+};
+dades.mostrarnom();
+dades.canvinom("Paco");
+dades.mostrarnom();
+
+</script>
+-->
+<!-- Objectes dins d'objectes
+<script type="text/javascript">
+	var perfil = {
+		jo : "Paco",
+		elmeugos : {
+			nom: "matt",
+			tipus: "mestis",
+			},
+		mostraresultat : function () {
+			alert ("Hola!Em dic " + perfil.jo + " i el meu gos " + perfil.elmeugos.nom);
+		},
+		//canvinom : function (canvi) {
+		//	perfil.elmeugos.nom = canvi;
+	//},
+};
+
+	perfil.mostraresultat ();
+	//perfil.canvinom ("Mutt");
+	//perfil.mostraresultat ();
+
+</script>
+-->
+<!-- Generació intàncies d'objectes 
+<script type="text/javascript">
+	var elmeuobjecte = {
+		nom: "Paco",
+		edat : "42",
+		mostrarnom: function () {
+			alert (this.nom);
+	},
+		mostraedat: function () {
+			alert (this.edat);
+		},
+		canvinom : function (canvinom) {
+			this.nom=canvinom;
+		},
+		canviedat : function (canviedat) {
+			this.edat=canviedat;
+		},
+};
+
+	//elmeuobjecte.mostrarnom ();
+	//elmeuobjecte.canvinom ("Pere");
+	//elmeuobjecte.alerta ();
+
+	var treballador = Object.create(elmeuobjecte);
+	treballador.canvinom ("Pep");
+	treballador.canviedat ("54");
+	treballador.mostrarnom ();
+	treballador.mostraedat ();
+	elmeuobjecte.mostrarnom ();
+	elmeuobjecte.mostraedat ();
+
+</script>
+-->
+<!--
+<script type="text/javascript">
+	var objecte = {
+		nom: "Paco",
+		edat: 42,
+		mostrarnom : function () {
+			alert (this.nom);
+		},
+		canvinom : function (canvi) {
+			this.nom = canvi;
+		}
+	};
+
+	var treballador = Object.create(objecte);
+	treballador.edat=24;
+	objecte.mostraredat = function () {
+		alert (this.edat);
+	};
+	treballador.mostraredat();
+
+</script>
+-->
+<!-- Cadena de prototips
+<script type="text/javascript">
+	var objecte = {
+		nom:"Paco",
+		edat: 42,
+		mostrarnom : function () {
+			alert (this.nom);
+			},
+		canvinom : function (canvi) {
+			this.nom = canvi;
+			}
+		};
+		var treballador1=Object.create(objecte);
+		var treballador2=Object.create(treballador1);
+		var treballador3=Object.create(treballador2);
+
+		treballador2.mostraredat=function (){
+			alert (this.edat);
+		};
+		treballador3.edat=24;
+		treballador3.mostraredat();
+		treballador2.nom="Marta"
+		treballador2.mostrarnom();
+	
+</script>
+-->
+<!--Ús de funcions per crear prototips-->
+<script type="text/javascript">
+	var constructor = function (nominicial) {
+		var obj = {
+			nom: nominicial,
+			edat: 42,
+			mostrarnom: function () {
+				alert (this.nom);
+			},
+			canvinom: function (canvi) {
+				this.nom=canvi;
+			}
+		};
+	return obj;
+	};
+	treballador=constructor("Juan");
+	treballador.mostrarnom ();
+</script>
+</body>
+</html>
